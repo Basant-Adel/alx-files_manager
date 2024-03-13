@@ -4,6 +4,7 @@ import readline from 'readline';
 import { promisify } from 'util';
 import mimeMessage from 'mime-message';
 import { gmail_v1 as gmailV1, google } from 'googleapis';
+
 const SCOPES = ['https://www.googleapis.com/auth/gmail.send'];
 const TOKEN_PATH = 'token.json';
 const readFileAsync = promisify(fs.readFile);
